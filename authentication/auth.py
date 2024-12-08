@@ -2,7 +2,6 @@ from rest_framework.authentication import BaseAuthentication
 from rest_framework.exceptions import AuthenticationFailed
 from rest_framework_simplejwt.tokens import AccessToken
 from rest_framework_simplejwt.exceptions import TokenError, InvalidToken
-import jwt
 
 class CustomJWTAuthentication(BaseAuthentication):
     def authenticate(self, request):
