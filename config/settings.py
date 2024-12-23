@@ -57,7 +57,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'config.middleware.JWTAuthenticationMiddleware',  # 추가된 미들웨어
 ]
 
 ROOT_URLCONF = 'config.urls'
