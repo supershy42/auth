@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&$qic-+@^rca!27p(h56wurvh9krwdf!uxmh0&4-5iif26dq#h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['api-gateway']
 
 
 # Application definition
@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'auth.auth.CustomJWTAuthentication',
     ),
 }
 
