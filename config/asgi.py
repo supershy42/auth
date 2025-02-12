@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """
 ASGI config for config project.
 
@@ -14,3 +15,13 @@ from django.core.asgi import get_asgi_application
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
 
 application = get_asgi_application()
+=======
+import os
+import django
+from channels.routing import get_default_application
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+django.setup()
+
+application = get_default_application()
+>>>>>>> f6961f4e33e0b31dca20c2e41bc6744c3303786e

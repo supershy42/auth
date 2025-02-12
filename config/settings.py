@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&$qic-+@^rca!27p(h56wurvh9krwdf!uxmh0&4-5iif26dq#h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['api-gateway']
+ALLOWED_HOSTS = ['api-gateway', 'auth']
 
 
 # Application definition
